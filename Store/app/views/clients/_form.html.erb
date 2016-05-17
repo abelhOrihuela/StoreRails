@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :type_client_id %><br>
-    <%= f.number_field :type_client_id %>
+    <%= f.collection_select :type_client_id, TypeClient.all, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>
