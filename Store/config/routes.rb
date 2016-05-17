@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :type_clients
+
   resources :clients
 
   # The priority is based upon order of creation: first created -> highest priority.
