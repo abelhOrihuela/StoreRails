@@ -18,7 +18,7 @@
       <tr>
         <td><%= sale.total %></td>
         <td><%= sale.total_parcial %></td>
-        <td><%= sale.client_id %></td>
+        <td><%= sale.client.name %></td>
         <td><%= sale.seller_id %></td>
         <td><%= link_to 'Show', sale %></td>
         <td><%= link_to 'Edit', edit_sale_path(sale) %></td>

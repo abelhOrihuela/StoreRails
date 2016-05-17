@@ -14,6 +14,8 @@
   <strong>Type client:</strong>
   <%= @client.type_client_id %>
 </p>
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
 <div class="">
   <h2>Resume to sales </h2>
 
@@ -27,6 +29,3 @@
 <td><%= link_to 'Show', sale %></td>
 <% end %>
 </div>
-
-<%= link_to 'Edit', edit_client_path(@client) %> |
-<%= link_to 'Back', clients_path %>

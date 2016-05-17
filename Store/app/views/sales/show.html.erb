@@ -19,9 +19,11 @@
   <strong>Seller:</strong>
   <%= @sale.seller_id %>
 </p>
-<% @sale.products.each do |product| %>
-  <h1>Hola</h1>
-<% end %>
+
 
 <%= link_to 'Edit', edit_sale_path(@sale) %> |
 <%= link_to 'Back', sales_path %>
+
+<% @sale.products.each do |product| %>
+  <p><%= product.name %></p>
+<% end %>
