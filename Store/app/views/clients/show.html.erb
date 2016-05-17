@@ -14,6 +14,19 @@
   <strong>Type client:</strong>
   <%= @client.type_client_id %>
 </p>
+<div class="">
+  <h2>Resume to sales </h2>
+
+<% @client.sales.each do |sale| %>
+<p>
+  id: <%= sale.id %>
+</p>
+<p>
+  total: <%=sale.total %>
+</p>
+<td><%= link_to 'Show', sale %></td>
+<% end %>
+</div>
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %>
