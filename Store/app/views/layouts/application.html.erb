@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class='container-main'>
 
-<%= yield %>
+  <div class='pure-menu pure-menu-horizontal pure-menu-scrollable'>
+    <%= link_to('Home', clients_path, class:'pure-menu-link pure-menu-heading')%>
+    <ul class='pure-menu-list'>
+        <li class='pure-menu-item'>
+          <%= link_to('Sales', sales_path, class: 'pure-menu-link')%>
+        </li>
+        <li class="pure-menu-item">
+          <%= link_to('Products', products_path, class: 'pure-menu-link')%>
+        </li>
+    </ul>
+</div>
+  <%= yield %>
+</div>
+
 
 </body>
 </html>

@@ -18,6 +18,9 @@
 <%= link_to 'Back', clients_path %>
 <div class="">
   <h2>Resume to sales </h2>
+  <p>
+    <%= link_to('New sale', new_sale_path )%>
+  </p>
 
 <% @client.sales.each do |sale| %>
 <p>
